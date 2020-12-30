@@ -1,0 +1,27 @@
+{
+  "name": "time-humanize",
+  "version": "1.0.0",
+  "description": "Formating miliseconds ",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darky-cpu/humanize.git"
+  },
+  "keywords": [
+    "humanize",
+    "format",
+    "times"
+  ],
+  "author": "Darky-cpu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darky-cpu/humanize/issues"
+  },
+  "homepage": "https://github.com/Darky-cpu/humanize#readme"
+}
