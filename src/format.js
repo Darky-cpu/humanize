@@ -1,4 +1,5 @@
 const { ar, en } = require("./test/languages.json");
+const hum = require("humanize-duration");
 
 function humanize(ms, option) {
   if (ms && "number" !== typeof ms) {
@@ -73,7 +74,7 @@ function humanize(ms, option) {
   var years = 0;
   
   // Formating
-  years = Math.floor(ms / (1000 * 60 * 60 * 24 * 30 * 12));
+  years = Math.floor(ms / (1000 * 60 * 60 * 24 * 30 * 12) % 365);
   months = Math.floor(ms / (1000 * 60 * 60 * 24 * 30) % 12);
   weeks = Math.floor(ms / (1000 * 60 * 60 * 24 * 7) % 4.29);
   days = Math.floor(ms / (1000 * 60 * 60 * 24) % 30);
@@ -87,7 +88,6 @@ function humanize(ms, option) {
   } else {
     
     seconds = ms / 1000 % 60;
-    
     seconds = seconds.toFixed(digits); 
   }
   var times = [];
@@ -114,10 +114,6 @@ function humanize(ms, option) {
   if (seconds > 0) times.push(`${seconds} ${(seconds == 1) ? language.s[0] : language.s[1]}`);
   }
   return times.join(join);
-}
-
-if (2 == 2) {
-  console.log(humanize(Date.now(), { round: true, join: " & "}));
 }
 
 module.exports = humanize;
