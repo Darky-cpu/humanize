@@ -4,23 +4,31 @@
 
 # Usage
 
-```javascript
+```js
 const { format } = require('time-humanize');
 
 const time = format(ms, options);
 ```
 
-# Example
+# Examples
 
-```javascript
+```js
 const { format } = require('time-humanize');
 const time = format(1000);
 
-console.log(time); // 1 seconds
+console.log(time); // 1 second
 ```
 
-```javascript
+```js
 const time = format(86399999);
 
-console.log(time); // 23 hours, 59 minutes, 59 seconds
+console.log(time); // 23 hours, 59 minutes, 59.99 seconds
+```
+
+## Options
+
+```js
+const time = format(86399999, { digits: 3 });
+
+console.log(time); // 23 hours, 59 minutes, 59.999 seconds
 ```
