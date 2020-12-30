@@ -1,6 +1,6 @@
 {
   "name": "time-humanize",
-  "version": "1.0.6",
+  "version": "1.8.1",
   "description": "Formating miliseconds ",
   "main": "index.js",
   "dependencies": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Darky-cpu/humanize.git"
+    "url": "git+https://github.com/Darky-cpu/humanize/tree/glitch.git"
   },
   "keywords": [
     "humanize",
@@ -23,7 +23,7 @@
   "author": "Darky-cpu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Darky-cpu/humanize/issues"
+    "url": "https://github.com/Darky-cpu/humanize/tree/glitch/issues"
   },
-  "homepage": "https://github.com/Darky-cpu/humanize#readme"
+  "homepage": "https://github.com/Darky-cpu/humanize/tree/glitch#readme"
 }
