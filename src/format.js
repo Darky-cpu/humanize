@@ -24,13 +24,14 @@ function humanize(ms, option) {
   var months = 0;
   var years = 0;
   
-  seconds = Math.floor(ms / 1000 % 60);
-  minutes = Math.floor(ms / (1000 * 60) % 60);
-  hours = Math.floor(ms / (1000 * 60 * 60) % 24);
-  days = Math.floor(ms / (1000 * 60 * 60 * 24) % 30);
-  weeks = Math.floor(ms / (1000 * 60 * 60 * 24 * 7) % 4.29);
-  months = Math.floor(ms / (1000 * 60 * 60 * 24 * 30) % 12);
+  
   years = Math.floor(ms / (1000 * 60 * 60 * 24 * 30 * 12));
+  months = Math.floor(ms / (1000 * 60 * 60 * 24 * 30) % 12);
+  weeks = Math.floor(ms / (1000 * 60 * 60 * 24 * 7) % 4.29);
+  days = Math.floor(ms / (1000 * 60 * 60 * 24) % 30);
+  hours = Math.floor(ms / (1000 * 60 * 60) % 24);
+  minutes = Math.floor(ms / (1000 * 60) % 60);
+  seconds = Math.floor(ms / 1000 % 60);
   
   var times = [];
   
