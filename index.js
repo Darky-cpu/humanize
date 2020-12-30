@@ -1,4 +1,4 @@
-const humanize = require("/app/src/format.js");
+const humanize = require("./src/format.js");
 
 module.exports = {
   format: humanize

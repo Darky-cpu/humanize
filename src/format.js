@@ -35,13 +35,13 @@ function humanize(ms, option) {
   
   var times = [];
   
-  if (seconds > 0) times.push(`${seconds} seconds`);
-  if (minutes > 0) times.push(`${minutes} minutes`);
-  if (hours > 0) times.push(`${hours} hours`);
-  if (days > 0) times.push(`${days} days`);
-  if (weeks > 0) times.push(`${weeks} weeks`);
-  if (months > 0) times.push(`${months} months`);
   if (years > 0) times.push(`${years} years`);
+  if (months > 0) times.push(`${months} months`);
+  if (weeks > 0) times.push(`${weeks} weeks`);
+  if (days > 0) times.push(`${days} days`);
+  if (hours > 0) times.push(`${hours} hours`);
+  if (minutes > 0) times.push(`${minutes} minutes`);
+  if (seconds > 0) times.push(`${seconds} seconds`);
   
   return times.join(", ");
 }
